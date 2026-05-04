@@ -228,108 +228,19 @@
     }
 
     @media (max-width: 920px) {
-      .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 46px;
-      }
-
-      .headshot {
-        justify-self: start;
-        max-width: 340px;
-      }
-
-      .art-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .about-layout {
-        grid-template-columns: 1fr;
-      }
+      .hero-inner { grid-template-columns: 1fr; }
+      .headshot { justify-self: start; max-width: 340px; }
+      .art-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-layout { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 640px) {
-      header {
-        align-items: center;
-        padding: 18px 22px;
-      }
-
-      .brand {
-        font-size: 0.72rem;
-        letter-spacing: 0.22em;
-      }
-
-      nav {
-        gap: 18px;
-        font-size: 0.68rem;
-        letter-spacing: 0.16em;
-      }
-
-      section {
-        padding: 72px 24px;
-      }
-
-      .hero {
-        min-height: auto;
-        padding-top: 118px;
-        padding-bottom: 72px;
-        align-items: start;
-      }
-
-      .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 38px;
-      }
-
-      .eyebrow {
-        font-size: 0.68rem;
-        letter-spacing: 0.24em;
-        margin-bottom: 18px;
-      }
-
-      h1 {
-        font-size: clamp(3.5rem, 18vw, 5.2rem);
-        line-height: 0.88;
-        letter-spacing: -0.075em;
-      }
-
-      .hero p:last-child {
-        font-size: 1.05rem;
-        max-width: 310px;
-        margin-top: 26px;
-      }
-
-      .headshot {
-        justify-self: center;
-        width: min(82vw, 330px);
-        max-width: none;
-        margin-top: 6px;
-      }
-
-      .art-grid {
-        grid-template-columns: 1fr;
-        gap: 42px;
-      }
-
-      .art-card:nth-child(2n) {
-        margin-top: 0;
-      }
-
-      .section-head {
-        display: grid;
-        gap: 16px;
-      }
-
-      h2 {
-        font-size: clamp(3.1rem, 15vw, 4.8rem);
-      }
-
-      .about-text {
-        font-size: clamp(2.3rem, 11vw, 3.9rem);
-      }
-
-      footer {
-        flex-direction: column;
-      }
+      header { align-items: flex-start; gap: 18px; }
+      nav { gap: 14px; flex-wrap: wrap; justify-content: flex-end; }
+      .art-grid { grid-template-columns: 1fr; }
+      .art-card:nth-child(2n) { margin-top: 0; }
+      .section-head { display: grid; }
+      footer { flex-direction: column; }
     }
   </style>
 </head>
@@ -349,7 +260,7 @@
         <div>
           <p class="eyebrow">Original Artwork</p>
           <h1>Rachel<br>Hira</h1>
-          <p>A clean digital gallery for available works, selected pieces, and studio inquiries.</p>
+          <p>San Antonio, Texas.</p>
         </div>
 
         <div class="headshot">
@@ -367,33 +278,33 @@
       <div class="art-grid">
         <article class="art-card">
           <div class="art-image">
-            <img src="images/art-01.jpg" alt="Untitled No. 01 by Rachel Hira">
+            <img src="images/art-01.jpg" alt="Gorgona by Rachel Hira">
           </div>
           <div class="art-info">
-            <div class="art-title">Untitled No. 01</div>
-            <div class="art-medium">Acrylic on canvas, 24 × 36 in.</div>
-            <div class="art-price">$850</div>
+            <div class="art-title">Gorgona</div>
+            <div class="art-medium">Oil on wood, 36 × 72 in.</div>
+            <div class="art-price">$6,500</div>
           </div>
         </article>
 
         <article class="art-card">
           <div class="art-image">
-            <img src="images/art-02.jpg" alt="Soft Geometry by Rachel Hira">
+            <img src="images/art-02.jpg" alt="Prehistoric Palm by Rachel Hira">
           </div>
           <div class="art-info">
-            <div class="art-title">Soft Geometry</div>
-            <div class="art-medium">Mixed media on paper, 18 × 24 in.</div>
-            <div class="art-price">$425</div>
+            <div class="art-title">Prehistoric Palm</div>
+            <div class="art-medium">Mixed media on paper, 36 × 48 in.</div>
+            <div class="art-price">$4,250</div>
           </div>
         </article>
 
         <article class="art-card">
           <div class="art-image">
-            <img src="images/art-03.jpg" alt="Quiet Field by Rachel Hira">
+            <img src="images/art-03.jpg" alt="Cloud at Sea by Rachel Hira">
           </div>
           <div class="art-info">
-            <div class="art-title">Quiet Field</div>
-            <div class="art-medium">Oil and pigment, 30 × 40 in.</div>
+            <div class="art-title">Cloud at Sea</div>
+            <div class="art-medium">Oil on canvas, 18 × 24 in.</div>
             <div class="art-price">$1,200</div>
           </div>
         </article>
@@ -440,9 +351,9 @@
       </div>
 
       <div class="about-layout">
-        <p class="about-text">Rachel Hira creates refined, expressive works with a focus on atmosphere, texture, and restraint.</p>
+        <p class="about-text">Rachel creates refined, expressive works with a focus on atmosphere, texture, and color.</p>
         <div class="about-body">
-          <p>Her work explores softness, structure, memory, and negative space. Each piece is composed with a quiet visual language, allowing color and surface to carry emotional weight.</p>
+          <p>Her work explores softness, structure, memory, and emotion. Each piece is composed with a quiet visual language, allowing color and surface to carry emotional weight.</p>
           <p>For commissions, availability, or studio inquiries, contact <a href="mailto:hello@rachelhira.com">hello@rachelhira.com</a>.</p>
         </div>
       </div>
